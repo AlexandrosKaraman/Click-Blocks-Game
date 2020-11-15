@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  display: flex;
+  max-width: unset;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+aside {
+  width: 30%;
+  max-width: 350px;
+  margin: 11.2rem 0 0px 30px;
+  border: 1px solid #000;
+}
+
+section#gameBoard {
+  height: 500px;
+}
+
+aside {
+  width: 30%;
+  max-width: 350px;
+  margin: 10.2rem 0 0px 30px;
+  border: 1px solid #000;
+  height: 500px;
+}
+
+header {
+  height: 160px;
+}
+
+h1 {
+  text-align: left;
+}
+
+header>div {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.buttons {
+  width: 800px;
+  margin: 20px 0 0 0;
+}
+
+div#pointsView {
+  background: #e7e7e7;
+  font-size: 29px;
+  padding: 1px 21px 0px 10px;
+  border: 1px solid #b4b4b4;
+  border-radius: 3px;
+}
+
+div#timeView {
+  background: #e7e7e7;
+  font-size: 29px;
+  padding: 1px 15px 0px 15px;
+  border: 1px solid #b4b4b4;
+  border-radius: 3px;
+}
+
+.col-md-3 {
+  text-align: center;
+}
+
+.buttons button {
+  background: #e7e7e7;
+  border: 1px solid #bebebe;
+  padding: 8px 40px;
+  border-radius: 30px;
+}
+
+button#pauseBtn {
+  padding: 10px 20px;
+}
+
+.buttons button {
+  background: #e7e7e7;
+  border: 1px solid #bebebe;
+  padding: 8px 40px;
+  border-radius: 30px;
+  outline: none !important;
+}
+
+aside h3 {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.buttons button:hover {
+  background: #595858;
+  color: #fff;
+  transition: .3s;
+}
+
+header label[hidden] {
+  display: unset !important;
+  visibility: hidden;
+}
+
+#pauseBtn {
+  width: 125px;
+}
+
+#pauseBtn.paused>:first-child,
+#pauseBtn:not(.paused)>:last-child {
+  display: none;
+}
+
+#gameBoard {
+  flex-grow: 1;
+  background-color: cornsilk;
+  position: relative;
+}
+
+.block {
+  position: absolute;
+}
+
+#menuBar {
+  padding-top: 10px;
+  height: 180px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menuBar button {
+  padding: 5px 30px;
+}
+
+#resultList {
+  flex-grow: 1;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#resultList>li {
+  display: flex;
+  justify-content: space-between;
+}
+
+dialog#endGameModal .buttons {
+  width: 100%;
+}
+
+dialog {
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  top: 30%;
+  border: none;
+}
+
+dialog::backdrop {
+  background-color: #4444;
+}
+
+dialog>div {
+  margin-top: 20px;
+}
+
+dialog>.prompt>label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog>.prompt>label>input {
+  margin-left: 30px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blocks Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 class="title text-center">Blocks Game</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="buttons">
+              <button id="startBtn">New Game</button>
+              <button id="pauseBtn" hidden>
+                <span>Pause</span>
+                <span>Continue</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label hidden>
+              <div>Points</div>
+              <div id="pointsView">999</div>
+            </label>
+          </div>
+          <div class="col-md-3">
+            <label hidden>
+              <div>Time left</div>
+              <div id="timeView">01:00</div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="gameBoard"></section>
+  </main>
+  <aside>
+    <h3>Table Result</h3>
+    <ul id="resultList"> </ul>
+  </aside>
+  <dialog id="endGameModal">
+    <h2>Game Over</h2>
+    <div class="message">
+      <span>Your Score</span>
+      <span id="scoreView">987</span>
+    </div>
+    <div class="prompt">
+      <label>
+        Your Name: <input id="nameInput">
+      </label>
+    </div>
+    <div class="buttons">
+      <button id="saveResultBtn">Save</button>
+    </div>
+  </dialog>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+</html>
